@@ -1,0 +1,204 @@
+#block {
+  background-color: rgba(0,0,0,0);
+  width: calc(100vw - 250px);
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+  top:0px;
+  left: 250px;
+  display: none;
+}
+
+.headder{
+  background-color: rgb(1, 103, 81);
+  height: 80px;
+  width: 100vw;
+}
+.headder > img {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.container {
+  background-color: white;
+  height: calc(100vh - 80px);
+  width: 100vw;
+}
+
+.menu {
+  width: 250px;
+  height: calc(100vh - 80px);
+}
+
+.menuast {
+  width: 250px;
+  position: absolute;
+  left: 248px;
+  top: calc(100vh - 314px);
+  display: none;
+}
+
+.menuast a {
+  background-color: rgb(170, 170, 170);
+  color: black;
+  display: block;
+  font-size: 1.4em;
+  padding: 15px 30px 15px 30px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: rgb(0,0,0);
+}
+.menuast a:last-child {
+  border-width: 2px 2px 2px 2px;
+}
+.menuast a:hover {
+  background-color: rgb(210, 210, 210);
+}
+
+.chat {
+  background-color: white;
+  float: right;
+  height: 100%;
+  width: calc(100vw - 250px);
+}
+.chat iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.search {
+  background-color: green;
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 50px 50px;
+}
+input[type=text] {
+  padding: 11px;
+  padding-bottom: 10px;
+  font-size: 1em;
+  outline: none;
+  height: 50px;
+}
+#lookUp {
+  height: 50px;
+  margin: 0;
+  font-size: 1.6em;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  border-style: inset;
+  border-width: 1px 0px 1px 0px;
+  outline: none;
+}
+#addChat {
+  height: 50px;
+  margin: 0;
+  font-size: 1.6em;
+  font-weight:900;
+  text-align: center;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  border-style: inset;
+  border-width: 1px 1px 1px 1px;
+  outline: none;
+}
+
+#lookUp:hover {
+  background-color: lightGray;
+}
+#addChat:hover {
+  background-color: lightGray;
+}
+
+.chat-list {
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  width: 100%;
+}
+
+.chat-list a {
+  background-color: rgb(123, 199, 108);
+  color: black;
+  display: block;
+  font-size: 1.4em;
+  padding: 15px 30px 15px 30px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: rgb(0,0,0);
+}
+
+.chat-list a:hover {
+  background-color: rgb(97, 156, 85);
+}
+.chat-list a:active {
+  background-color: rgb(97, 156, 85);
+}
+
+.assistance {
+  background-color: lightGray;
+  height: 50px;
+  width: 100%;
+}
+.assistance:hover {
+  background-color: rgb(190,190,190);
+}
+
+.dropd {
+  position: absolute;
+  background-color: lightGray;
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+.dropast:hover .menuast {
+  display: block;
+}
+.menuast:hover {
+  display: block;
+}
+
+.dropdb {
+  border-radius: 2px;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .chat {
+    width: 100vw;
+  }
+  .dropd {
+    display: block;
+  }
+
+  .dropdb {
+    display: block;
+  }
+
+  .dropd:hover .menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    height: calc(100vh - 180px);
+  }
+  #chat:hover {
+    color:black;
+  }
+
+  .menuast {
+    width: 250px;
+    position: absolute;
+    left: 0px;
+    top: calc(100vh - 462px);
+    display: none;
+  }
+}

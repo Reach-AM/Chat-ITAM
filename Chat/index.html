@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat  ITAM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/log.css">
+    <script language="javascript" type="text/javascript" src="assets/js/log.js"></script>
+  </head>
+  <body>
+    <img src="assets/img/img-ITAM-logo.png" alt="ITAM" class="logo">
+    <form action="user.html" method="post">
+      <div class="container">
+        <label for="uname"><b>Usuario</b></label>
+        <input type="text" id="name" placeholder="Nombre de usuario" name="uname" autocomplete="off" required>
+        <br>
+        <br>
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" id="pswd" placeholder="********" name="psw" autocomplete="off" required>
+        <b id="msg">&nbsp</b>
+        <button type="button" onClick="log()"><b>Entrar</b></button>
+        <label>
+
+        <input type="checkbox" checked="checked" name="remember"> Recordar
+      </label>
+      </div>
+    </form>
+  </body>
+</html>
